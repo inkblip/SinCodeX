@@ -1,29 +1,387 @@
+/* Import Google Fonts for retro punk brush style */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&family=Yatra+One&family=Averia+Libre:wght@300;400;700&family=Permanent+Marker&family=Rock+Salt&family=Shadows+Into+Light&family=Caveat:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Indie+Flower&family=Overlock:wght@400;700;900&family=Fira+Code:wght@400;500;600;700&display=swap');
+
+/* Apply custom fonts - override Material defaults */
+/* Body and general text use Yatra One */
+body,
+.md-typeset {
+  font-family: 'Yatra One', sans-serif !important;
+}
+
+/* Paragraphs use Averia Libre */
+p,
+.md-typeset p {
+  
+}
+
+/* Lists and other elements use Yatra One */
+p,
+.md-typeset p,
+li,
+.md-typeset li,
+ul,
+.md-typeset ul,
+ol,
+.md-typeset ol,
+.md-typeset blockquote,
+.md-typeset blockquote p {
+  font-family: 'Averia Libre', sans-serif !important;
+}
+
+/* Different fonts for each heading level - retro punk variety */
+/* H1 - Protest Revolution (single style font) */
+h1,
+.md-typeset h1 {
+  font-family: 'Protest Revolution', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* H2 - Protest Riot */
+h2,
+.md-typeset h2 {
+  font-family: 'Protest Riot', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* H3 - Protest Riot */
+h3,
+.md-typeset h3 {
+  font-family: 'Protest Riot', sans-serif !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* H4 - Protest Riot */
+h4,
+.md-typeset h4 {
+  font-family: 'Protest Riot', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* H5 - Protest Riot */
+h5,
+.md-typeset h5 {
+  font-family: 'Protest Riot', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* H6 - Protest Riot */
+h6,
+.md-typeset h6 {
+  font-family: 'Protest Riot', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Code blocks with monospace font */
+code,
+pre,
+.md-typeset code,
+.md-typeset pre {
+  font-family: 'Fira Code', 'Source Code Pro', 'Courier New', monospace !important;
+}
+
+/* Navigation and UI elements */
+.md-header__title,
+.md-nav__title,
+.md-nav__item {
+  font-family: 'Yatra One', sans-serif !important;
+}
+
+/* Paper texture base - works for both light and dark modes */
 body {
+  position: relative;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      rgba(0, 0, 0, 0.02) 1px,
+      transparent 1px,
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      rgba(0, 0, 0, 0.02) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+}
+
+/* Light mode paper texture */
+[data-md-color-scheme="default"] body {
+  background-color: #f5f1e8;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      rgba(0, 0, 0, 0.02) 1px,
+      transparent 1px,
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.02) 0px,
+      rgba(0, 0, 0, 0.02) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+}
+
+/* Dark mode paper texture */
+[data-md-color-scheme="slate"] body {
+  background-color: #1a1a1a;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.02) 1px, transparent 0),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.01) 0px,
+      rgba(255, 255, 255, 0.01) 1px,
+      transparent 1px,
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.01) 0px,
+      rgba(255, 255, 255, 0.01) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+}
+
+/* Brush stroke effect on main content */
+.md-main__inner {
   position: relative;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/dark-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  filter: blur(5px); /* Adjust blur amount as needed */
-  z-index: -2;
+.md-content__inner {
+  position: relative;
 }
 
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
+/* Retro punk brush stroke borders */
+.md-header {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, 
+    #8b0000 0%, 
+    #ff4500 25%, 
+    #ffd700 50%, 
+    #ff4500 75%, 
+    #8b0000 100%
+  ) 1;
+  box-shadow: 0 2px 8px rgba(139, 0, 0, 0.3);
+}
+
+/* Brush stroke effect on headings */
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  text-shadow: 
+    1px 1px 0px rgba(0, 0, 0, 0.1),
+    -1px -1px 0px rgba(255, 255, 255, 0.1);
+}
+
+[data-md-color-scheme="slate"] h1,
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3,
+[data-md-color-scheme="slate"] h4,
+[data-md-color-scheme="slate"] h5,
+[data-md-color-scheme="slate"] h6 {
+  text-shadow: 
+    1px 1px 0px rgba(0, 0, 0, 0.3),
+    -1px -1px 0px rgba(255, 255, 255, 0.05);
+}
+
+/* Retro punk accent colors for links */
+a {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 3px currentColor;
+}
+
+/* Brush stroke underline on hover */
+a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85); /* Darker overlay for slate theme */
-  z-index: -1;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    currentColor 0%,
+    currentColor 20%,
+    transparent 80%,
+    transparent 100%
+  );
+  opacity: 0.6;
+  transform: skewX(-5deg);
+}
+
+/* Code blocks with paper texture */
+.md-typeset code {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Admonitions with brush stroke borders */
+.md-typeset .admonition {
+  border-left-width: 4px;
+  border-left-style: solid;
+  box-shadow: 
+    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.01) 2px,
+      rgba(0, 0, 0, 0.01) 4px
+    );
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition {
+  box-shadow: 
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.01) 2px,
+      rgba(255, 255, 255, 0.01) 4px
+    );
+}
+
+/* Navigation with retro punk styling */
+.md-nav__link {
+  transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+  text-shadow: 0 0 2px currentColor;
+}
+
+/* Tables with paper texture */
+.md-typeset table:not([class]) {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      rgba(0, 0, 0, 0.01) 1px,
+      rgba(0, 0, 0, 0.01) 2px
+    );
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      rgba(255, 255, 255, 0.01) 1px,
+      rgba(255, 255, 255, 0.01) 2px
+    );
+}
+
+/* Blockquotes with brush stroke effect */
+.md-typeset blockquote {
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, 
+    transparent 0%,
+    currentColor 20%,
+    currentColor 80%,
+    transparent 100%
+  ) 1;
+  box-shadow: inset 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  box-shadow: inset 2px 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons with retro punk styling */
+.md-button {
+  border: 2px solid;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.md-button:hover {
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Sidebar with paper texture */
+.md-sidebar {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      rgba(0, 0, 0, 0.01) 1px,
+      rgba(0, 0, 0, 0.01) 2px
+    );
+}
+
+[data-md-color-scheme="slate"] .md-sidebar {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      rgba(255, 255, 255, 0.01) 1px,
+      rgba(255, 255, 255, 0.01) 2px
+    );
+}
+
+/* Add subtle brush stroke texture to main content area */
+.md-content {
+  position: relative;
+}
+
+.md-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(ellipse at 20% 30%, rgba(139, 0, 0, 0.02) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(255, 69, 0, 0.02) 0%, transparent 50%);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+[data-md-color-scheme="slate"] .md-content::before {
+  background-image: 
+    radial-gradient(ellipse at 20% 30%, rgba(139, 0, 0, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(255, 69, 0, 0.05) 0%, transparent 50%);
+}
+
+.md-content__inner {
+  position: relative;
+  z-index: 1;
 }
