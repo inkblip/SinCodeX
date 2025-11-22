@@ -11,7 +11,7 @@ body,
 /* Paragraphs use Averia Libre */
 p,
 .md-typeset p {
-  
+  font-family: 'Averia Libre', sans-serif !important;
 }
 
 /* Lists and other elements use Yatra One */
@@ -107,9 +107,9 @@ body {
     );
 }
 
-/* Light mode paper texture */
+/* Light mode paper texture - grayscale */
 [data-md-color-scheme="default"] body {
-  background-color: #f5f1e8;
+  background-color: #ffffff;
   background-image: 
     radial-gradient(circle at 1px 1px, rgba(0,0,0,0.03) 1px, transparent 0),
     repeating-linear-gradient(
@@ -128,9 +128,9 @@ body {
     );
 }
 
-/* Dark mode paper texture */
+/* Dark mode paper texture - grayscale */
 [data-md-color-scheme="slate"] body {
-  background-color: #1a1a1a;
+  background-color: #000000;
   background-image: 
     radial-gradient(circle at 1px 1px, rgba(255,255,255,0.02) 1px, transparent 0),
     repeating-linear-gradient(
@@ -158,7 +158,7 @@ body {
   position: relative;
 }
 
-/* Retro punk brush stroke borders */
+/* Brush stroke borders - colored stroke allowed */
 .md-header {
   border-bottom: 3px solid;
   border-image: linear-gradient(90deg, 
@@ -168,7 +168,7 @@ body {
     #ff4500 75%, 
     #8b0000 100%
   ) 1;
-  box-shadow: 0 2px 8px rgba(139, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Brush stroke effect on headings */
@@ -211,55 +211,37 @@ a:hover::after {
   background: linear-gradient(90deg, 
     currentColor 0%,
     currentColor 20%,
-    transparent 80%,
+    currentColor 75%,
     transparent 100%
   );
   opacity: 0.6;
   transform: skewX(-5deg);
 }
 
-/* Code blocks with paper texture */
+/* Code blocks - no fill, only stroke */
 .md-typeset code {
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }
 
 [data-md-color-scheme="slate"] .md-typeset code {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: none;
 }
 
-/* Admonitions with brush stroke borders */
+/* Admonitions - no fill, only stroke */
 .md-typeset .admonition {
   border-left-width: 4px;
   border-left-style: solid;
-  box-shadow: 
-    inset 0 0 0 1px rgba(0, 0, 0, 0.1),
-    0 2px 4px rgba(0, 0, 0, 0.1);
-  background: 
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 2px,
-      rgba(0, 0, 0, 0.01) 2px,
-      rgba(0, 0, 0, 0.01) 4px
-    );
+  box-shadow: none;
+  background: transparent !important;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .admonition {
-  box-shadow: 
-    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 2px 4px rgba(0, 0, 0, 0.3);
-  background: 
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 2px,
-      rgba(255, 255, 255, 0.01) 2px,
-      rgba(255, 255, 255, 0.01) 4px
-    );
+  box-shadow: none;
+  background: transparent !important;
 }
 
 /* Navigation with retro punk styling */
@@ -271,33 +253,17 @@ a:hover::after {
   text-shadow: 0 0 2px currentColor;
 }
 
-/* Tables with paper texture */
+/* Tables - no fill, only stroke */
 .md-typeset table:not([class]) {
-  box-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.1),
-    inset 0 0 0 1px rgba(0, 0, 0, 0.05);
-  background: 
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 1px,
-      rgba(0, 0, 0, 0.01) 1px,
-      rgba(0, 0, 0, 0.01) 2px
-    );
+  box-shadow: none;
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) {
-  box-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.3),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-  background: 
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 1px,
-      rgba(255, 255, 255, 0.01) 1px,
-      rgba(255, 255, 255, 0.01) 2px
-    );
+  box-shadow: none;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Blockquotes with brush stroke effect */
@@ -316,72 +282,80 @@ a:hover::after {
   box-shadow: inset 2px 0 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Buttons with retro punk styling */
+/* Buttons - no fill, only stroke */
 .md-button {
   border: 2px solid;
-  box-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+  background: transparent !important;
   transition: all 0.2s ease;
 }
 
 .md-button:hover {
-  box-shadow: 
-    0 4px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: none;
+  background: transparent !important;
   transform: translateY(-1px);
 }
 
-/* Sidebar with paper texture */
+/* Sidebar - no fill */
 .md-sidebar {
-  background: 
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 1px,
-      rgba(0, 0, 0, 0.01) 1px,
-      rgba(0, 0, 0, 0.01) 2px
-    );
+  background: transparent !important;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar {
-  background: 
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 1px,
-      rgba(255, 255, 255, 0.01) 1px,
-      rgba(255, 255, 255, 0.01) 2px
-    );
+  background: transparent !important;
 }
 
-/* Add subtle brush stroke texture to main content area */
+/* Content area - no colored fills */
 .md-content {
   position: relative;
 }
 
 .md-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  background-image: 
-    radial-gradient(ellipse at 20% 30%, rgba(139, 0, 0, 0.02) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(255, 69, 0, 0.02) 0%, transparent 50%);
-  opacity: 0.5;
-  z-index: 0;
+  display: none;
 }
 
 [data-md-color-scheme="slate"] .md-content::before {
-  background-image: 
-    radial-gradient(ellipse at 20% 30%, rgba(139, 0, 0, 0.05) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(255, 69, 0, 0.05) 0%, transparent 50%);
+  display: none;
 }
 
 .md-content__inner {
   position: relative;
   z-index: 1;
+}
+
+/* Remove all fill colors from Material theme elements */
+.md-header__inner,
+.md-nav,
+.md-nav__inner,
+.md-main,
+.md-main__inner,
+.md-sidebar,
+.md-content,
+.md-typeset {
+  background-color: transparent !important;
+}
+
+/* Ensure text colors are grayscale/black-white */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #000000;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #000000;
+  --md-default-fg-color: #ffffff;
+}
+
+/* Remove colored backgrounds from all Material components */
+.md-typeset pre,
+.md-typeset pre code {
+  background-color: transparent !important;
+}
+
+.md-typeset .highlight {
+  background-color: transparent !important;
+}
+
+.md-typeset .highlight pre {
+  background-color: transparent !important;
 }

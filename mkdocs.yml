@@ -8,14 +8,14 @@ theme:
     code: "Fira Code, 'Source Code Pro', 'Courier New', monospace" # Modern retro monospace
   palette:
     - scheme: default
-      primary: deep purple
-      accent: red
+      primary: white
+      accent: grey
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: deep purple
-      accent: red
+      primary: black
+      accent: grey
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
