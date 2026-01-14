@@ -5,7 +5,6 @@ War in Torn can be a thrill: fun, brutal, exhausting, and sometimes expensive. T
 
 Whether you're a seasoned fighter or new to the chaos, follow these basics to ensure you're pulling your weight and not leaking points.
 
----
 ## The Must-Dos in Every War
 
 No matter the type of war, you **must**:
@@ -20,7 +19,6 @@ No matter the type of war, you **must**:
 
 ![alt text](../assets/images/guides/revives-off.png)
 
----
 ## Types of Wars
 
 ### 1. **Termed Wars**
@@ -37,12 +35,11 @@ No matter the type of war, you **must**:
     Some players may be unaware, may not care, or accidents might happen (like being mistaken as idle or offline).
 
     If this happens, send them a direct message. If they don't respond, notify the leadership team and they'll handle it from there.
----
+
 ### 2. **Un-termed (Real) Wars**
 - These are full-blown wars with no agreements.
 - Everything is fair game, and winning **depends entirely on us**: strategy, activity, and teamwork.
 
----
 
 ## Turtling: How to Avoid Bleeding Points
 
@@ -58,7 +55,6 @@ Turtling means **making yourself unavailable for attacks**, usually by hospitali
 |**Ipecac Syrup**|60–90 mins|Good alternative without the course|None|30 mins|Free from faction armory|
 |**Small Explosive Device**|5 hours|Best if you're going to sleep|None|None|~6.2m (as of 07/08/25)|
 
----
 
 ### Other Options
 - **Bountying or Mercing**: While technically an option, we **do not** recommend or support this, and should be avoided entirely. After a player leaves the hospital, there is a **60-second protection window** during which outside attackers (like bounty hunters or mercs) **cannot** hit them. However, the **enemy faction can** still attack you during this time, which means they will almost always get to you first. It’s expensive, unreliable, and wastes faction resources. **Stick to self-hospitalizing or traveling.**
@@ -77,10 +73,6 @@ Choose your travel destination based on how long you’ll be inactive:
 | **Long flights**    | Japan, China, UAE, South Africa    | Best if you’ll be offline for an extended period. Keeps you safe longer. |
 
 
-
-
----
-
 ## War Strategy Checklist
 
 - [x] **Stack 900 to 1000 energy** beforehand.  
@@ -91,12 +83,9 @@ Choose your travel destination based on how long you’ll be inactive:
 - [x] **Score efficiently**, not just frequently.  
 - [x] **Leave offliners whenever possible.** Leaving offline players yields the best respect and shortens their hospital time, which gives us more chances to score on them again.  
 - [x] **Hospitalize active scorers.** If someone is online and actively hitting us, hospitalizing them forces them to use med cooldowns, slows down their scoring, or discourages them from continuing.  
-- [x] **Monitor your medical cooldown.** If you’re scoring consistently in a real war, you’re likely being hospitalized too. Med cooldowns run out fast, and once they’re gone, you’ll be stuck waiting to heal — which means less time scoring and a lower contribution overall.
+- [x] **Monitor your medical cooldown.** If you’re scoring consistently in a real war, you’re likely being hospitalized too. Med cooldowns run out fast, and once they’re gone, you’ll be stuck waiting to heal, which means less time scoring and a lower contribution overall.
 
     
-
----
-
 ## Scoring: How to Earn More Respect
 
 A common issue: high-stat players logging in briefly, farming weak targets, leaking points, and logging off. We appreciate your effort, but **efficiency matters more than raw activity**.

@@ -1,19 +1,22 @@
-site_name: 7 Deadly sins
+site_name: 7 Deadly Sins*
 site_url: https://inkblip.github.io/SinCodeX/
 site_author: ingine
 theme:
   name: material
+  copyright: "© 2026 7 Deadly Sins*"
   font:
-    text: "'Permanent Marker', 'Rock Salt', 'Shadows Into Light', cursive" # Retro punk brush style
-    code: "Fira Code, 'Source Code Pro', 'Courier New', monospace" # Modern retro monospace
+    text: Verdana # Retro punk brush style
+    code: Fira Code # Modern retro monospace
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: white
       accent: grey
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: black
       accent: grey
       toggle:
@@ -28,10 +31,9 @@ theme:
     - navigation.indexes
 extra_css:
   - assets/css/custom.css # Link to your custom CSS
-extra_head: |
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&family=Yatra+One&family=Averia+Libre:wght@300;400;700&family=Permanent+Marker&family=Rock+Salt&family=Shadows+Into+Light&family=Caveat:wght@400;500;600;700&family=Kalam:wght@300;400;700&family=Indie+Flower&family=Overlock:wght@400;700;900&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+extra:
+  generator: false
 
 markdown_extensions:
   - attr_list

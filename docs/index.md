@@ -1,36 +1,54 @@
-# Welcome to Samurai Uprising
+# Welcome, Sinner
+Welcome to 7 Deadly Sins*, a faction family built on coordination, communication, and shared intent. Every branch operates under the same core principles: act with purpose, work as a group, and respect the structure.
 
+Our focus spans organised crimes, warfare, and long-term growth. Success is not measured by solo gains, but by how well we plan, communicate, and execute together.
 
-Hey there, welcome to Samurai Uprising, Torn City's underdogs in the art of war! Whether you're new to the battlefield or a seasoned warrior, you've found a community dedicated to to strategic (most of the time) domination and collective triumph. Here, our primary focus is on sharpening our combat skills and expanding our influence through tactical prowess.
+This codex exists to define expectations, standards, and processes across the family. Read it carefully. Clarity prevents mistakes, and mistakes cost everyone.
 
-While we excel in warfare, we also support members in other endeavors like trading and finance. but make no mistake, our strength lies in our ability to coordinate strikes, defend our turf, and outmaneuver our rivals. (Again, most of the time 😀).
+This codex applies to all factions within **7 Deadly Sins\*** and defines shared rules, expectations, and processes used across the faction family.
+
 
 
 ## Requirements
-### 1. Contact a Mentor
-If you haven't been contacted by a mentor yet, head over to [`#❓-help`](https://discord.gg/Yxa8EtYTtH){:target="\_blank"} channel on Discord and request assistance. Our mentors are here to guide you through our strategies and help you settle in.
 
-### 2. Join our Discord server
-Joining our Discord server is mandatory for effective communication and coordination. While Torn has its own chat system, Discord offers enhanced features and automation through bots for faction banking and other utilities. Click [here](tools/discord.md) for a guide on setting up and using Discord efficiently.
+### 1. Torn Stats
+Use of external tools is expected across the faction family. The following are commonly used:
 
-**Join our server using this link**: [Samurai Uprising's Discord](https://discord.gg/3Y2PBSBnJk){:target="\_blank"}
+- [Torn Stats](https://tornstats.com/){:target="_blank"}
+- [TornTools](https://chromewebstore.google.com/detail/torntools/hjpaapdjcgbmeikfnahipphknonhlhib){:target="_blank"}
+- [YATA](https://yata.yt/){:target="_blank"}
 
-### 3. Join Tornstats
-To excel in Torn, utilizing external tools such as [TornTools](https://chromewebstore.google.com/detail/torntools/hjpaapdjcgbmeikfnahipphknonhlhib){:target="\_blank"}, [Torn Stats](https://tornstats.com/){:target="\_blank"}, and [YATA](https://yata.yt/){:target="\_blank"} is highly recommended. These tools provide crucial data for planning your strategies effectively.
+**Torn Stats is mandatory.**
+Setup instructions can be found [here](tools/tornstats.md).
 
-Regarding tools, our primary focus is on signing up for Torn Stats as a mandatory requirement. If you encounter difficulties setting them up, refer to our guides [here](tools/tornstats.md).
+### 2. Discord
+Discord is the primary platform for communication and coordination. Joining the server is required.
 
+**Join here**: [7DS* Discord](https://discord.gg/yMZmfXZ39X){:target="_blank"}
 
----
-!!! Danger "Required Applications"
-    Membership in both Torn Stats and the Discord server is mandatory, not optional.
-    
-    Upon joining the faction, ==**you have one week to fulfill this requirement**==.
-    
-    Failure to do so will result in you being kicked from the faction.
-    
-    If you encounter any difficulties, please communicate with higher ranks in Torn or on Discord.
+For setup and usage, see the [Discord guide](tools/discord.md).
 
+### 3. Questions and Help
+If you are unsure about anything, ask in the [`#hall`](https://discord.com/channels/1208473860123656212/1436593784044650576){:target="_blank"} channel on Discord. Mentors and members are available to provide assistance.
 
----
-If you've made it this far, congratulations! You're finally ready to learn some things if you're new or feel lost in the game. We've prepared some extra guides that could be very helpful. Make sure to check them out!
+## Ongoing Expectations
+
+The following apply to all members unless stated otherwise:
+
+- Maintain appropriate **Xanax usage** as required for faction activity
+- Join and participate in **Organised Crimes**
+- Participate in **wars** when called
+- Participate in **chains** when required
+
+!!! danger "Required Applications"
+    Membership in **Torn Stats** and the **Discord server** is required.
+
+    New members are given **one week from joining** to complete both.
+
+    Members who do not meet this requirement within the given timeframe may be removed from the faction.
+
+    If you run into issues setting things up, communicate with higher ranks in Torn or on Discord as early as possible.
+
+If you have reached this point, you are set up correctly.
+The sections below cover additional guidance for newer members or those who want a better understanding of how things work. These are optional, but strongly recommended.
+
